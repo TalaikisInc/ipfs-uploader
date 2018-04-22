@@ -73,6 +73,10 @@ class Put extends Component {
         failure: `You need an image.`
       })
     }
+
+    this.setState({
+      loading: false
+    })
   }
 
   render() {
