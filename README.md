@@ -1,4 +1,4 @@
-# IPFS Uploader
+# IPFS Image Uploader
 
 Upload your images to Interplanetary file system (IPFS) and see them.
 
