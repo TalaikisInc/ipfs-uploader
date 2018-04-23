@@ -39,8 +39,7 @@ class Home extends Component {
     event.preventDefault()
 
     this.setState({
-      loading: true,
-      hash: ''
+      loading: true
     })
 
     if (this.state.hash !== '') {
@@ -89,12 +88,21 @@ class Home extends Component {
             <Box pad='small' align='center'>
               { this.state.loading ? 'Loading...' : <Button primary={true} type='submit' label='Get it' /> }
             </Box>
-            { this.state.hash ? `Hash: ${this.state.hash}` : '' }
+            <Box pad='small' align='center'>
+              <Label align="cenyer">{ this.state.hash ? `Hash: ${this.state.hash}` : '' }</Label>
+            </Box>
           </Form>
-          { this.state.data ?
-            <Image src={this.state.data} size='large' />
+          { this.state.data ? <Image src={this.state.data} size='large' align="center" />
             : ''
           }
+          <Box align="center">
+            <Label align="center">
+              If you want to add this image as your image source, use this url:
+            </Label>
+            <pre>
+              https://ipfs.infura.io:5001/api/v0/cat/{this.state.hash}
+            </pre>
+          </Box>
         </Box>
           { this.state.modalOpen && <Toast
             status={this.state.success ? 'ok' : 'critical' }>
