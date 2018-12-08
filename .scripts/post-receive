@@ -1,0 +1,24 @@
+#!/bin/bash
+
+read_var() {
+    VAR=$(grep $1 $2 | xargs)
+    IFS="=" read -ra VAR <<< "$VAR"
+    echo ${VAR[1]#*=}
+}
+
+APP_NAME=$(read_var APP_NAME /root/.scripts/.env)
+PORT=$(read_var PROD_PORT /root/.scripts/.env)
+
+echo "Triger received. Deploying..."
+cd /opt/ipfs
+git --git-dir=/opt/ipfs.git --work-tree=/opt/ipfs checkout master -f
+
+echo 'Installing'
+npm install
+
+echo 'Building...'
+PORT=$PORT npm run build
+
+echo 'Starting server.' 
+pm2 delete $APP_NAME
+PORT=$PORT pm2 start npm --name $APP_NAME -- start
