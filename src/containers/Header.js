@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router'
 
-import Box  from 'grommet/components/Box'
 import Heading  from 'grommet/components/Heading'
 import Tabs  from 'grommet/components/Tabs'
+import Box  from 'grommet/components/Box'
 import Tab  from 'grommet/components/Tab'
 
 import * as actions from '../actions'
