@@ -9,4 +9,4 @@ Upload your images to Interplanetary file system (IPFS) and see them.
 
 ## Demo
 
-[Visit](https://ipfs.identiform.com/see)
+[Visit](https://ipfs.talaikis.com/see)
