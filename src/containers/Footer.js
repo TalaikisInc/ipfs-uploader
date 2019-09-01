@@ -6,7 +6,7 @@ import Paragraph from 'grommet/components/Paragraph'
 
 const Footer = () => (
   <Box align='center'>
-    <Paragraph>&copy; 2018, <a href="https://powerpiper.com">PowerPiper</a></Paragraph>
+    <Paragraph>&copy; 2018, <a href="https://talaiikis.com">Talaikis Ltd.</a></Paragraph>
   </Box>
 )
 

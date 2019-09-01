@@ -1,30 +1,30 @@
 {
   "name": "ipfs-uploader",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
+  "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/powerpiper/ipfs-uploader.git"
+    "url": "git+https://github.com/TalaikisINc/ipfs-uploader.git"
   },
   "author": "Tadas Talaikis <info@talaikis.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/powerpiper/ipfs-uploader/issues"
+    "url": "https://github.com/TalaikisINc/ipfs-uploader/issues"
   },
   "dependencies": {
-    "compression": "^1.7.2",
-    "express": "^4.16.3",
-    "grommet": "^1.10.1",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "grommet": "^1.13.0",
     "grommet-css": "^1.6.0",
-    "ipfs-mini": "^1.1.2",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-ga": "^2.5.0",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "ipfs-mini": "^1.1.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-ga": "^2.6.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "3.1.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,9 +36,27 @@
     "test": "jest"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.7.0",
-    "cypress": "^2.1.0",
-    "jest": "^22.4.3",
-    "source-map-explorer": "^1.5.0"
+    "babel-plugin-import": "^1.12.1",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "source-map-explorer": "^2.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
