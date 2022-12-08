@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "grommet": "^1.13.0",
     "grommet-css": "^1.6.0",
     "ipfs-mini": "^1.1.5",
